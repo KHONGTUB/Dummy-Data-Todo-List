@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dummy Data Fetch API</title>
-        <script src="scripts.js"></script>
-    </head>
-    <body>
-        <button onclick="fetchTodos()">Fetch Todos</button>
-        <button onclick="logTodos()">Log Todos</button>
-        <button onclick="populateTodos()">Populate Todos</button>
-        <ol id="todo-list">
-            <!-- LIs will go here -->
-        </ol>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Data Fetch API</title>
+    <script src="scripts.js"></script>
+</head>
+<body>
+
+        <label for="number">Please enter a number between 1 and 10:</label>
+        <input type="number" id="number" name="number" value="" min="1" max="10">
+        <input onclick="fetchTodos()" type="button" value="submit">
+        <input onclick="clearTodos()" type="button" value="clear">
+        <input onclick="completed()" type="button" value="Completed">
+        <input onclick="notcompleted()" type="button" value="Not completed">
+        <input onclick="clearcompleted()" type="button" value="Clear completed">
+        <input onclick="clearnotcompleted()" type="button" value=" Clear not completed">
+        
+
+        <ol id="todo-list"></ol>
+        <ol id="completed"></ol>
+        <ol id="not-completed"></ol>
+    
+</body>
 </html>
